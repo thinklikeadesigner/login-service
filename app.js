@@ -27,7 +27,11 @@ const app = express();
 Requests rejected by the limiter will not be added to the request.log.
 It is necessary to connect the logger first in the chain, and then the limiter
 */
-const port = process.env.PORT || 3000;
+let port = process.env.PORT;
+if (port == null || port === '') {
+  port = 8000;
+}
+app.listen(port);
 const { NODE_ENV, DATABASE } = process.env;
 //  apply to all requests
 
