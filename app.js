@@ -29,10 +29,10 @@ It is necessary to connect the logger first in the chain, and then the limiter
 */
 let port = process.env.PORT;
 if (port == null || port === '') {
-  port = 8000;
+  port = 3000;
 }
-app.listen(port);
-const { NODE_ENV, DATABASE } = process.env;
+
+const { NODE_ENV, MONGODB_URI } = process.env;
 //  apply to all requests
 
 // const DEFAULT_EXPIRATION = 3600;
@@ -86,11 +86,14 @@ COMPLETE In production mode, the database address is taken from process.env.
 https://snipboard.io/1FywqR.jpg
 */
 
-mongoose.connect(NODE_ENV === 'production' ? DATABASE : 'mongodb://localhost:27017/newsexplorer', {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  NODE_ENV === 'production' ? MONGODB_URI : 'mongodb://localhost:27017/newsexplorer',
+  {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+  },
+);
 
 app.listen(port);
