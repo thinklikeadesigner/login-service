@@ -1,0 +1,45 @@
+{
+  "name": "around-express",
+  "version": "1.0.0",
+  "description": "## Directories",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinklikeadesigner/around-express.git"
+  },
+  "author": "Rebecca Burch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinklikeadesigner/around-express/issues"
+  },
+  "homepage": "https://github.com/thinklikeadesigner/around-express#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^14.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "express-winston": "^4.1.0",
+    "helmet": "^4.4.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2",
+    "prettier": "^2.2.1",
+    "redis": "^3.1.2",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3"
+  }
+}
