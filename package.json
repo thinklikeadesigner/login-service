@@ -4,8 +4,8 @@
   "description": "## Directories",
   "main": "app.js",
   "engines": {
-    "node": "16.x",
-    "npm": "7.x"
+    "node": "16.4.2",
+    "npm": "7.18.1"
   },
   "scripts": {
     "start": "node app.js",
