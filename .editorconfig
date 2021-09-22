@@ -36,3 +36,8 @@
 # quote_type = single
 
 # quote = single
+
+root = true
+
+[*]
+end_of_line = lf
