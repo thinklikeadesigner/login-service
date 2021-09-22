@@ -32,7 +32,7 @@ if (port == null || port === '') {
   port = 3000;
 }
 
-const { NODE_ENV, MONGODB_URI } = process.env;
+const { NODE_ENV } = process.env;
 //  apply to all requests
 
 // const DEFAULT_EXPIRATION = 3600;
@@ -87,7 +87,9 @@ https://snipboard.io/1FywqR.jpg
 */
 
 mongoose.connect(
-  NODE_ENV === 'production' ? MONGODB_URI : 'mongodb://localhost:27017/newsexplorer',
+  NODE_ENV === 'production'
+    ? 'mongodb+srv://user-51:jStORwGwqDei3ccU@login-service-east.iv0tt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    : 'mongodb://localhost:27017/newsexplorer',
   {
     useNewUrlParser: true,
     useCreateIndex: true,
