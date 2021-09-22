@@ -97,4 +97,3 @@ mongoose.connect(
 );
 
 app.listen(port);
-// heroku config:set MONGODB_URI='mongodb+srv://user-51:jStORwGwqDei3ccU@login-service-east.iv0tt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
