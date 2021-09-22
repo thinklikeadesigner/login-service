@@ -27,8 +27,8 @@ const app = express();
 Requests rejected by the limiter will not be added to the request.log.
 It is necessary to connect the logger first in the chain, and then the limiter
 */
-
-const { PORT = 3000, NODE_ENV, DATABASE } = process.env;
+const port = process.env.PORT || 3000;
+const { NODE_ENV, DATABASE } = process.env;
 //  apply to all requests
 
 // const DEFAULT_EXPIRATION = 3600;
@@ -89,4 +89,4 @@ mongoose.connect(NODE_ENV === 'production' ? DATABASE : 'mongodb://localhost:270
   useUnifiedTopology: true,
 });
 
-app.listen(PORT);
+app.listen(port);
