@@ -1,8 +1,8 @@
-# news-explorer-api
+# login-service
 
 
 
-This repository contains the full API of "News Explorer" project that features user authorization and user registration and allows users to search and save news articles.
+This repository contains the auth API of "ion-vue" project that features user authorization and user registration.
 
 <!-- [Live site](https://thinklikeadesigner.github.io/news-explorer-frontend/) -->
 
