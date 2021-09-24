@@ -43,8 +43,6 @@ git merge upstream/master
 
 Application has very few dependencies, so it's most probably very easy to understand when you scan through the code, but there is at least few steps you should know
 
-Application is divided into two parts. One is pure React front-end which is [in a different repo](https://github.com/thinklikeadesigner/news-explorer-frontend), the other is this server.
-
 To start this application server in development mode run command below and open your app on `http://localhost:3000`
 
 ```source-js
