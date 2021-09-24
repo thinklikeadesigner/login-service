@@ -2,7 +2,7 @@
 
 
 
-This repository contains the auth API of "ion-vue" project that features user authorization and user registration.
+This repository contains the auth API of "ionic-vue" project that features user authorization and user registration.
 
 <!-- [Live site](https://thinklikeadesigner.github.io/news-explorer-frontend/) -->
 
